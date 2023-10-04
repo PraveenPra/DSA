@@ -25,7 +25,6 @@ function searchItem() {
 
     let searchFor = document.querySelector('#searchFor').value;
     searchFor = parseInt(searchFor);
-    alert(searchFor)
     let indexFound = undefined;
 
     for (let i = 0; i < data.length; i++) {

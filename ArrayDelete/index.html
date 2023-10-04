@@ -4,13 +4,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Array delete</title>
+    <title>Array Delete</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
 
+        .center {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        h3 {
+            margin-top: 20px;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            display: block;
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #555;
+        }
+
+        #output {
+            margin-top: 20px;
+            border: 1px solid #ccc;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        hr {
+            margin-top: 20px;
+        }
+
+        code {
+            display: block;
+            background-color: #f0f0f0;
+            padding: 10px;
+            margin-top: 20px;
+            border-radius: 5px;
+        }
+    </style>
 </head>
 
 <body>
     <div class="center">
-        <h2>Array deleting </h2>
+        <h2>Array Deleting</h2>
 
         <h3>Data</h3>
         <div id="displayData"></div>
@@ -18,26 +89,19 @@
 
         <label for="pos">Enter position to delete</label>
         <input type="text" id="position" name="pos" placeholder="21" />
-        <br />
-       <br />
-        <button onclick="deleteItem()">
-            Delete
-        </button>
-
         <br /><br />
+        <button onclick="deleteItem()">Delete</button>
 
         <h3>Output</h3>
         <div id="output"></div>
 
         <hr>
-        <code>Note: you can use array.splice(position,how many to delete,what to replace with): ex - delete at 2nd pos ,delete 1 element, replace with nothing
+        <code>Note: you can use array.splice(position, how many to delete, what to replace with): ex - delete at 2nd pos, delete 1 element, replace with nothing
             <br/>
-            data.splice(2,1)
+            data.splice(2, 1)
         </code>
-
     </div>
-    <script src="main.js">     
-    </script>
+    <script src="main.js"></script>
 </body>
 
 </html>
