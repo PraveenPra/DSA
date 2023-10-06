@@ -27,5 +27,5 @@ function deleteItem() {
 
     display(data, output);
 
-
+    data = [60, 30, 10, 67, 40];
 }
