@@ -12,16 +12,16 @@
 
   
 
-  describe("deleteItem", function() {
+  describe("Test deleteItem", function() {
       it("should delete an element from the array at the specified position", function() {
           // Arrange
-          let data = [60, 30, 10, 67, 40];
+          let data = [246,455,56,788,323,5,660];
   
           // Act
           deleteItem(data, 2); // Delete element at position 2 (value: 10)
   
           // Assert
-          assert.deepEqual(data, [60, 30, 67, 40], "Array should have the element at position 2 removed.");
+          assert.deepEqual( data,[246,455,788,323,5,660], "Array should have the element at position 2 removed.");
       });
   
       it("should handle deleting from an empty array without errors", function() {
