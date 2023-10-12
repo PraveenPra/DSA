@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recursion</title>
+    <link rel="stylesheet" href="/common.css">
+</head>
+
+<body>
+    <div class="center">
+        <h2>Recursion: factorial</h2>
+
+        <label for="nnn">Enter a number</label>
+        <input type="text" id="n" name="nnn" placeholder="5" />
+
+        <br /><br />
+        <button>Factorial</button>
+
+        <h3>Output</h3>
+        <div id="output"></div>
+    </div>
+    <script>
+        const output = document.querySelector('#output');
+        const button = document.querySelector('button');
+     
+        button.addEventListener('click', function (e) {
+            e.preventDefault()
+
+            let n = document.querySelector('#n').value
+            n = parseInt(n);
+            let result = factorial(n);
+            output.innerHTML = result;
+        })
+
+        function factorial(n) {
+            if (n == 0) {
+                return 1;
+            }
+
+            return n * factorial(n - 1);
+        }
+    </script>
+</body>
+
+</html>
